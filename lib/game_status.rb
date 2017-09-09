@@ -5,9 +5,9 @@ end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
-[0,1,2] #top rows
-[3,4,5] #middle rows
-[6,7,8] #bottom row
+[0,1,2] 
+[3,4,5] 
+[6,7,8] 
 [0,3,6]
 [1,4,7]
 [2,5,8]
@@ -77,10 +77,10 @@ end
 
 def winner(board)
   if !draw?(board) && over?(board)
-    board[won?(board)[1]]
+    board[won?(board)[1]] 
   elsif full?(board) && draw?(board) && over?(board)
-    return nil
-  end
+    return nil 
+  end 
 end
 
 winner( ["X", "O", " ", " ", " ", " ", " ", "O", "X"])
