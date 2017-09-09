@@ -77,10 +77,10 @@ end
 
 def winner(board)
   if !draw?(board) && over?(board)
-    board[won?(board)[1]] 
+    board[won?(board)[1]]
   elsif full?(board) && draw?(board) && over?(board)
-    return nil 
-  end 
+    return nil
+  end
 end
 
 winner( ["X", "O", " ", " ", " ", " ", " ", "O", "X"])
