@@ -12,7 +12,7 @@ WIN_COMBINATIONS = [
 [2,4,6]
 [0,3,6]
 [2,5,8]
-[1,4,7]]
+[1,4,7]
 
 def won?(board)
 WIN_COMBINATIONS.each do |win_array|
